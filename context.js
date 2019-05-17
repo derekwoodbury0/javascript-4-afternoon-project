@@ -80,7 +80,7 @@ function whatIsThis() {
 }
 
 // uncomment the line below and tell us what the context of "this" is for whatIsThis()
-let context1 = whatIsThis(user)
+let context1 = whatIsThis()
 
 let product = {
   name: 'snake plant',
@@ -91,7 +91,7 @@ let product = {
 let func = whatIsThis.bind(product)
 
 // uncomment the line below and tell us what the context of "this" is when we invoke func
-let context2 = func(product)
+let context2 = func()
 
 let vacation = {
   location: 'Hawaii',
@@ -120,4 +120,4 @@ class Family {
 let family1 = new Family(2, 4, 1)
 
 // uncomment the line below and tell us what the context of "this" is for the instance of Family created above.
-let context4 = family1 = Family
+let context4 = family1.whatIsThis()
